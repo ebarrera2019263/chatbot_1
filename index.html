@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Chatbot ErickBarrera</title>
@@ -8,18 +8,24 @@
 <body>
 
 <div id="chat-container">
-  <label id="theme-toggle-label">
-    Tema
-    <input type="checkbox" id="theme-toggle">
-  </label>
-  <div id="messages"></div>
+  <div id="messages-container">
+    <div id="messages"></div>
+  </div>
+
   <div id="input-area">
-    <input type="text" id="chat-input" placeholder="Escribe el mensaje a enviar....">
-    <button id="send-button">Enviar</button>
+    <input type="text" id="username" placeholder="Nombre de usuario">
+    <textarea id="message" placeholder="Escribe un mensaje..."></textarea>
+    <button id="send-message">Enviar</button>
+  </div>
+
+  <div id="theme-toggle-container">
+    <label id="theme-toggle-label">
+      Tema
+      <input type="checkbox" id="theme-toggle">
+    </label>
   </div>
 </div>
 
 <script src="js/chat.js"></script>
-
 </body>
 </html>
